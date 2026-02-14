@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: white;
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    background: #181818;
+    height: 100vh;
+    padding: 20px;
+    position: sticky;
+}
+.sidebar img{
+    width: 110px;
+}
+
+.sidebar .logo {
+    margin-bottom: 30px;
+}
+.options a{
+    display: block;
+    color: #b3b3b3;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    padding:20px;
+    border-radius: 8px;
+}
+.options a:hover {
+    color: white;
+    background-color: #282828;
+}
+.music-section h2{
+    font-weight: 900;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.topbar input {
+    width: 50%;
+    padding: 15px;
+    background: #222;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+    
+}
+.card img{height: 200px; width:auto}
+
+.card:hover {
+    background: #282828;
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+.Artists-section h2{
+    font-weight: 900;
+    font-size: 30px;
+    padding: 30px;
+    text-align: left;
+}
+
+/* Bottom Player */
+.player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #181818;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
